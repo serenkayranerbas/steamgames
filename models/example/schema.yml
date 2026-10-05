@@ -1,0 +1,220 @@
+version: 2
+
+sources:
+  # --------------------------
+  # games_march2025
+  # --------------------------
+  - name: games_march2025_cleaned
+    database: gradproject-510411
+    schema: games_march2025
+
+    tables:
+      - name: games_march2025
+        identifier: games_march2025
+        description: "Table that includes march 2025 games"
+        columns:
+          - name: appid
+            description:  "Unique identifier assigned to the game on Steam"
+            tests:
+              - unique
+              - not_null
+          - name: name
+            description: "Name of the game"
+          - name: release_date
+            description: "Date when the game was released"
+          - name: required_age
+            description: "Minimum age required to play the game"
+          - name: price
+            description: "Current price of the game"
+          - name: dlc_count
+            description: "Number of downloadable content (DLC) items available for the game"
+          - name: detailed_description
+            description: "Detailed description of the game"
+          - name: about_the_game
+            description: "General information and overview of the game"
+          - name: short_description
+            description: "Short summary of the game"
+          - name: reviews
+            description: "Review information or review summary for the game"
+          - name: header_image
+            description: "URL of the game's header image"
+          - name: website
+            description: "Official website URL of the game"
+          - name: support_url
+            description:  "URL of the game's support page"
+          - name: support_email
+            description: "Support email address for the game"
+          - name: windows
+            description: "Indicates whether the game supports Windows"
+          - name: mac
+            description: "Indicates whether the game supports macOS"
+          - name: linux
+            description: "Indicates whether the game supports Linux"
+          - name: metacritic_score
+            description: "Metacritic review score of the game"
+          - name: metacritic_url
+            description: "URL of the game's Metacritic page"
+          - name: achievements
+            description: "Number of Steam achievements available in the game"
+          - name: recommendations
+            description: "Number of Steam users who recommended the game"
+          - name: notes
+            description: "Additional notes or requirements related to the game"
+          - name: supported_languages
+            description: "Languages supported by the game"
+          - name: full_audio_languages
+            description: "Languages supported with full audio"
+          - name: packages
+            description: "Steam packages associated with the game"
+          - name: developers
+            description: "Developer or developers of the game"
+          - name: publishers
+            description: "Publisher or publishers of the game"
+          - name: categories
+            description: "Steam categories and features associated with the game"
+          - name: genres
+            description: "Genre or genres of the game"
+          - name: screenshots
+            description: "URLs or information for screenshots of the game"
+          - name: movies
+            description: "URLs or information for game trailers and videos"
+          - name: user_score
+            description: "User score assigned to the game"
+          - name: score_rank
+            description: "Ranking of the game based on its score"
+          - name: positive
+            description: "Number of positive user reviews"
+          - name: negative
+            description: "Number of negative user reviews"
+          - name: estimated_owners
+            description: "Estimated number or range of Steam users who own the game"
+          - name: average_playtime_forever
+            description: "Average total playtime per player, typically measured in minutes"
+          - name: average_playtime_2weeks
+            description: "Average playtime per player during the last two weeks, typically measured in minutes"
+          - name: median_playtime_forever
+            description: "Median total playtime per player, typically measured in minutes"
+          - name: median_playtime_2weeks
+            description: "Median playtime per player during the last two weeks, typically measured in minutes"
+          - name: discount
+            description: "Discount percentage applied to the game's price"
+          - name: peak_ccu
+            description: "Peak number of concurrent users playing the game"
+          - name: tags
+            description: "User-defined Steam tags associated with the game"
+          - name: pct_pos_total
+            description: "Percentage of all user reviews that are positive"
+          - name: num_reviews_total
+            description: "Total number of user reviews"
+          - name: pct_pos_recent
+            description: "Percentage of recent user reviews that are positive"
+          - name: num_reviews_recent
+            description: "Number of recent user reviews"
+
+# --------------------------
+# games_may2024
+# --------------------------
+  - name: games_may2024_cleaned
+    database: gradproject-510411
+    schema: games_may2024
+
+    tables:
+      - name: games_march2025
+        identifier: games_march2025
+        description: "Table that includes march 2025 games"
+        columns:
+          - name: appid
+            description:  "Unique identifier assigned to the game on Steam"
+            tests:
+              - unique
+              - not_null
+          - name: name
+            description: "Name of the game"
+          - name: release_date
+            description: "Date when the game was released"
+          - name: required_age
+            description: "Minimum age required to play the game"
+          - name: price
+            description: "Current price of the game"
+          - name: dlc_count
+            description: "Number of downloadable content (DLC) items available for the game"
+          - name: detailed_description
+            description: "Detailed description of the game"
+          - name: about_the_game
+            description: "General information and overview of the game"
+          - name: short_description
+            description: "Short summary of the game"
+          - name: reviews
+            description: "Review information or review summary for the game"
+          - name: header_image
+            description: "URL of the game's header image"
+          - name: website
+            description: "Official website URL of the game"
+          - name: support_url
+            description:  "URL of the game's support page"
+          - name: support_email
+            description: "Support email address for the game"
+          - name: windows
+            description: "Indicates whether the game supports Windows"
+          - name: mac
+            description: "Indicates whether the game supports macOS"
+          - name: linux
+            description: "Indicates whether the game supports Linux"
+          - name: metacritic_score
+            description: "Metacritic review score of the game"
+          - name: metacritic_url
+            description: "URL of the game's Metacritic page"
+          - name: achievements
+            description: "Number of Steam achievements available in the game"
+          - name: recommendations
+            description: "Number of Steam users who recommended the game"
+          - name: notes
+            description: "Additional notes or requirements related to the game"
+          - name: supported_languages
+            description: "Languages supported by the game"
+          - name: full_audio_languages
+            description: "Languages supported with full audio"
+          - name: packages
+            description: "Steam packages associated with the game"
+          - name: developers
+            description: "Developer or developers of the game"
+          - name: publishers
+            description: "Publisher or publishers of the game"
+          - name: categories
+            description: "Steam categories and features associated with the game"
+          - name: genres
+            description: "Genre or genres of the game"
+          - name: screenshots
+            description: "URLs or information for screenshots of the game"
+          - name: movies
+            description: "URLs or information for game trailers and videos"
+          - name: user_score
+            description: "User score assigned to the game"
+          - name: score_rank
+            description: "Ranking of the game based on its score"
+          - name: positive
+            description: "Number of positive user reviews"
+          - name: negative
+            description: "Number of negative user reviews"
+          - name: estimated_owners
+            description: "Estimated number or range of Steam users who own the game"
+          - name: average_playtime_forever
+            description: "Average total playtime per player, typically measured in minutes"
+          - name: average_playtime_2weeks
+            description: "Average playtime per player during the last two weeks, typically measured in minutes"
+          - name: median_playtime_forever
+            description: "Median total playtime per player, typically measured in minutes"
+          - name: median_playtime_2weeks
+            description: "Median playtime per player during the last two weeks, typically measured in minutes"
+          - name: peak_ccu
+            description: "Peak number of concurrent users playing the game"
+          - name: tags
+            description: "User-defined Steam tags associated with the game"
+          - name: pct_pos_total
+            description: "Percentage of all user reviews that are positive"
+          - name: num_reviews_total
+            description: "Total number of user reviews"
+          - name: pct_pos_recent
+            description: "Percentage of recent user reviews that are positive"
+          - name: num_reviews_recent
+            description: "Number of recent user reviews"
