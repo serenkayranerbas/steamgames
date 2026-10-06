@@ -21,7 +21,12 @@ renamed as (
         screenshots,
         movies
     )
-  
+   replace(
+        nullif(pct_pos_total, -1) as pct_pos_total,
+        nullif(num_reviews_total, -1) as num_reviews_total,
+        nullif(pct_pos_recent, -1) as pct_pos_recent,
+        nullif(num_reviews_recent, -1) as num_reviews_recent
+    )
     from source
 
 )
