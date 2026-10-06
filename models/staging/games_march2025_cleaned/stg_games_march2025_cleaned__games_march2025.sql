@@ -8,8 +8,20 @@ source as (
 
 renamed as (
 
-    select
-
+    select * except(
+        detailed_description,
+        about_the_game,
+        short_description,
+        header_image,
+        website,
+        support_url,
+        support_email,
+        metacritic_url,
+        notes,
+        screenshots,
+        movies
+    )
+  
     from source
 
 )
