@@ -18,7 +18,7 @@ final as (
 
 
 select * from march2025
-union all
+union all by name
 select * from may2024
 )
 
