@@ -6,11 +6,11 @@ sources:
   # --------------------------
   - name: games_march2025_cleaned
     database: gradproject-510411
-    schema: games_march2025
+    schema: Steam_Games
 
     tables:
       - name: games_march2025
-        identifier: games_march2025
+        identifier: games_march2025_cleaned
         description: "Table that includes march 2025 games"
         columns:
           - name: appid
@@ -116,14 +116,14 @@ sources:
 # --------------------------
   - name: games_may2024_cleaned
     database: gradproject-510411
-    schema: games_may2024
+    schema: Steam_Games
 
     tables:
-      - name: games_march2025
-        identifier: games_march2025
-        description: "Table that includes march 2025 games"
+      - name: games_may2024
+        identifier: games_may2024_cleaned
+        description: "Table that includes may 2024 games"
         columns:
-          - name: appid
+          - name: AppID
             description:  "Unique identifier assigned to the game on Steam"
             tests:
               - unique
