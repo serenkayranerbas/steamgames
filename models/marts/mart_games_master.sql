@@ -3,7 +3,7 @@
 with games as (
 
     select *
-    from {{ ref('int_games_joined') }}
+    from {{ ref('int_append_years') }}
 
 ),
 deduplicated as (
