@@ -5,7 +5,7 @@ Steam oyun verilerini analiz etmek amacıyla geliştirilen bu projede, **dbt ve 
 ## 🎮 Project Preview
 
 <p align="center">
-  <img src="steam_games.gif" alt="Steam Games Analytics" width="100%">
+  <img src="steamGamespProject.gif" alt="Steam Games Analytics" width="100%">
 </p>
 
 ## 🛠️ Technologies Used
