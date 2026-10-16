@@ -1,15 +1,30 @@
-Welcome to your new dbt project!
+# 🎮 Steam Games Analytics
 
-### Using the starter project
+Steam oyun verilerini analiz etmek amacıyla geliştirilen bu projede, **dbt ve Google BigQuery** kullanılarak veri dönüşümleri gerçekleştirilmiştir. Hazırlanan veri modelleri, Power BI dashboard'ları ve makine öğrenmesi analizleri için kullanılmıştır.
 
-Try running the following commands:
-- dbt run
-- dbt test
+## 🎮 Project Preview
 
+<p align="center">
+  <img src="steam_games.gif" alt="Steam Games Analytics" width="100%">
+</p>
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [dbt community](https://getdbt.com/community) to learn from other analytics engineers
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+## 🛠️ Technologies Used
+
+- Google BigQuery
+- dbt (Data Build Tool)
+- Power BI
+- Python
+- Machine Learning
+
+## 📂 dbt Data Models
+
+- **Staging:** Ham verilerin temizlenmesi ve standartlaştırılması
+- **Intermediate:** Verilerin birleştirilmesi ve dönüştürülmesi
+- **Marts:** Analiz ve raporlamaya hazır tabloların oluşturulması
+
+## 🚀 Running the Project
+
+```bash
+dbt run
+dbt test
+```
